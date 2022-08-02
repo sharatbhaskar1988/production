@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-ssl
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: letsencrypt 
+spec:
+  rules:
+  - host: sapp1.mykubeoncloud.live
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+           name: myapp-svc
+           port: 
+             number: 80
+  tls:
+  - hosts:
+    -  sapp1.mykubeoncloud.live
+    secretName: sapp1-kubeoncloud-secret
