@@ -1,0 +1,7 @@
+{
+    "tenantId": "ea00e8c4-0268-4388-b8b9-a60853f88ff0",
+    "subscriptionId": "23a0c28f-2a4f-49ba-a189-df4a5bc8e583",
+    "resourceGroup": "aks-dns",
+    "useManagedIdentityExtension": true,
+    "userAssignedIdentityID": "3eccd083-89e6-422c-9320-7e099cdc6489"
+  }
