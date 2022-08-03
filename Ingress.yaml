@@ -14,7 +14,7 @@ spec:
         path: /
         backend:
           service:
-           name: myapp-svc
+           name: app1-nginx-clusterip-service
            port: 
              number: 80
   tls:
